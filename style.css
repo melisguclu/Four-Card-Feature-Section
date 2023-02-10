@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+--main-bg-color:#FAFAFA;
+--main-title-others:#A2A5AE;
+--bold-title:#505363;
+--card-bg-volod:#FFFFFF;
+
+--border-red:#EA5353;
+--border-blue:#539EF1;
+--border-cyan:#45D3D3;
+--border-orange:#FCAE49;
+
+
+
+--fontfamily:'Poppins',sans-serif;
+}
+
+
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  body{
+    background-color: var(--main-bg-color);
+  }
+
+ main{
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+    font-family: var(--fontfamily);
+ }
+ .header{
+  font-size: 10px;
+  text-align: center;
+ }
+ .boldtitle{
+  color: var(--bold-title);
+  font-size: 22px;
+  
+ }
+ .title{
+  color: var(--main-title-others);
+  font-weight: 200;
+  font-size: 22px;
+
+ }
+ .text{
+  font-size: 14px;
+  padding-bottom:3rem ;
+  padding-top:1.4rem ;
+  color: var(--main-title-others);
+  text-align: center;
+ }
+ .card{
+  padding:1.8rem ;margin-bottom: 1.7rem;
+  height: 250px;
+  background-color: var(--card-bg-volod);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  border-radius: 5px;
+ }
+
+ .head{
+  font-size: 21px;
+  color: var(--bold-title);
+  
+ }
+ .icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  margin-top: 2.8rem;
+  
+ }
+ .info{
+  font-size: 14px;
+  color: var(--main-title-others);
+  padding-top: 0.5rem;
+ }
+ .middletop{
+  border-top:4.5px solid var(--border-red);
+ }
+ .middlebottom{
+  border-top:4.5px solid var(--border-orange);
+ }
+ .left{
+  border-top:4.5px solid var(--border-cyan);
+ }
+ .right{
+  border-top:4.5px solid var(--border-blue);
+ }
+ a{
+  text-decoration: none;
+ }
+
+
+ @media (min-width:769px){
+  .cards{
+    width: 84%;
+    margin: 0 auto;
+   }
+   .card{
+    width: 30%;
+   }
+   .middle{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+   }
+   .leftright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -27rem;
+    padding: 2rem;
+   }
+   .attribution{
+    position: absolute;
+    bottom: 1rem;
+    left: 41%;
+   }
+ }
+ 
